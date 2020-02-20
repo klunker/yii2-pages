@@ -25,6 +25,16 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
+To use module in project please add module at application.
+```php
+'modules' => [
+    'pages' => [
+        'class' => 'klunker\pages\Module',
+    ],
+],```
+
+
+
 Once the extension is installed, simply use it in your code by  :
 
 ```php

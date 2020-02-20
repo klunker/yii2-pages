@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\klunker\pages;
+namespace klunker\pages;
 
 /**
  * pages module definition class

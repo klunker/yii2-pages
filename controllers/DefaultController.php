@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\klunker\pages\controllers;
+namespace klunker\pages\controllers;
 
 use yii\web\Controller;
 
