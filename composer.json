@@ -1,0 +1,21 @@
+{
+    "name": "klunker/yii2-pages",
+    "description": "This is standalone static module that will be add a admin control for pages. Include SEO tags and etc.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrii Cherepkov",
+            "email": "andrii.cherepkov@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "klunker\\pages\\": ""
+        }
+    }
+}
