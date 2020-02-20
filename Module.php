@@ -10,7 +10,7 @@ class Module extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'vendor\klunker\pages\controllers';
+    public $controllerNamespace = 'klunker\pages\controllers';
 
     /**
      * {@inheritdoc}
