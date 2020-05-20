@@ -9,6 +9,28 @@ use yii\web\Controller;
  */
 class TagsController extends Controller
 {
+        /**
+     * {@inheritdoc}
+     */
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [[
+                    'allow' => true,
+                    'roles' => ['@'],
+                ]],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    '*' => ['GET'],
+                    'delete' => ['POST'],
+                ],
+            ],
+        ];
+    }
     /**
      * Renders the index view for the module
      * @return string
