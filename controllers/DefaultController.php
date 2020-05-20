@@ -3,6 +3,8 @@
 namespace klunker\pages\controllers;
 
 use yii\web\Controller;
+use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * Default controller for the `pages` module

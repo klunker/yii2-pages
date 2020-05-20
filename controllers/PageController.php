@@ -8,6 +8,7 @@ use klunker\pages\models\PageSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * PageController implements the CRUD actions for Page model.
