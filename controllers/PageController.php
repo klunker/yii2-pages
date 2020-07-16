@@ -24,9 +24,13 @@ class PageController extends Controller
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [[
-                    'allow' => true,
-                    'roles' => ['@'],
-                ]],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                    [
+                        'actions' => ['view'],
+                        'allow' => true,
+                    ]],
             ],
             'verbs' => [
                 'class' => VerbFilter::className(),
@@ -59,7 +63,7 @@ class PageController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionView($id)
+    public function actionView($id = null)
     {
         return $this->render('view', [
             'model' => $this->findModel($id),
